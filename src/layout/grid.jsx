@@ -11,20 +11,39 @@ import instagram from "../image/instagram.png";
 import "../App.css";
 
 const grid = () => {
-  // eslint-disable-next-line react-hooks/rules-of-hooks
-  const [figure, setFigure] = useState("../image/img1");
+  const frappe = require('../image/img1.png');
+  const frappe1 = require('../image/thumb2.png');
 
-  const handleClick = (e) => {
-    setFigure("../image/thumb2");
-    console.log("hola");
-  };
+
+  // eslint-disable-next-line react-hooks/rules-of-hooks
+  //const [select,setSelected] = useState(images.frappe)
+  
+  // eslint-disable-next-line react-hooks/rules-of-hooks
+  /*const [slides, setSlides] = useState({
+    index:0,
+    imgList:[frappe,frappe1]
+  })
+ 
+  const changeImage = () =>{
+    if(slides.index + 1 === slides.imgList.length){
+      slides({
+        index:0
+      })
+    }else{
+      setSlides({
+        index:slides.index + 1
+      })
+    }
+  }*/
+  
+  
   return (
     
     <div>
       <Container>
         <div className="circle"></div>
         <Row>
-          <Col>
+          <Col> 
             <Figure>
               <Figure.Image src={starbucks} />
             </Figure>
@@ -68,22 +87,22 @@ const grid = () => {
           </Col>
           <Col className="wrapper-figure">
             <Figure className="img-product">
-              <Figure.Image src={img1} />
+              <Figure.Image  src={img1} />
             </Figure>
             <ul className="sci">
               <li>
                 <a href="">
-                  <img src={facebook} alt="" />
+                  <img className="fa" src={facebook} alt="facebook" />
                 </a>
               </li>
               <li>
                 <a href="">
-                  <img src={twitter} alt="" />
+                  <img  className="fa" src={twitter} alt="twitter" />
                 </a>
               </li>
               <li>
                 <a href="">
-                  <img src={instagram} alt="" />
+                  <img className="fa" src={instagram} alt="instagram" />
                 </a>
               </li>
             </ul>
@@ -93,7 +112,7 @@ const grid = () => {
           <Col>
             <ul className="thumb">
               <li>
-                <img src={thumb1} value={figure} alt="" onClick={handleClick} />
+                <img src={thumb1}  alt=""/>
               </li>
               <li>
                 <img src={thumb2} alt="" />
