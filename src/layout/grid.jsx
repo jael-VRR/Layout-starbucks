@@ -1,5 +1,5 @@
 import { Container, Row, Col, Nav, Figure } from "react-bootstrap";
-import React, { useState } from "react";
+import React from "react";
 import starbucks from "../image/starbucks.png";
 import img1 from "../image/img1.png";
 import thumb1 from "../image/thumb1.png";
@@ -10,39 +10,14 @@ import twitter from "../image/twitter.png";
 import instagram from "../image/instagram.png";
 import "../App.css";
 
-const grid = () => {
-  const frappe = require('../image/img1.png');
-  const frappe1 = require('../image/thumb2.png');
+const Grid = () => {
 
-
-  // eslint-disable-next-line react-hooks/rules-of-hooks
-  //const [select,setSelected] = useState(images.frappe)
-  
-  // eslint-disable-next-line react-hooks/rules-of-hooks
-  /*const [slides, setSlides] = useState({
-    index:0,
-    imgList:[frappe,frappe1]
-  })
- 
-  const changeImage = () =>{
-    if(slides.index + 1 === slides.imgList.length){
-      slides({
-        index:0
-      })
-    }else{
-      setSlides({
-        index:slides.index + 1
-      })
-    }
-  }*/
-  
-  
   return (
     
     <div>
       <Container>
         <div className="circle"></div>
-        <Row>
+        <Row >
           <Col> 
             <Figure>
               <Figure.Image src={starbucks} />
@@ -127,4 +102,4 @@ const grid = () => {
     </div>
   );
 };
-export default grid;
+export default Grid;
