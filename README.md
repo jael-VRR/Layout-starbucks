@@ -1,2 +1,3 @@
 # Layout-starbucks
-![ScreenShot] (./src/image/view.png)
+![ScreenShot](./src/image/view.png)
+
