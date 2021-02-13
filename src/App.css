@@ -101,10 +101,43 @@ p{
 {
     .circle{
         background: #fff;
-    }  
-
-    .fa{
-      color: #017143;
+    } 
+    .thumb{
+      display: flex;
+      flex-direction: column;
+      margin-left: 100px;
+    } 
+    .img-fluid{
+      max-width: 240px;
     }
+  
+}
 
+@media (max-width:1024px)
+{
+    .circle{
+        background: #fff;
+    } 
+    .thumb{
+      display: flex;
+      flex-direction: column;
+      margin-left: 100px;
+    } 
+    .img-fluid{
+      max-width: 240px;
+    }
+  
+}
+.contenedor-change{
+  width: 600px;
+  height: 600px;
+}
+
+.wave {
+  position: absolute;
+  top: calc((100% - 300px) / 2);
+  left: calc((100% - 300px) / 2);
+  width: 500px;
+  height: 500px;
+ 
 }
